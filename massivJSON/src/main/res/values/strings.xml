@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="rawJSON">"array:[{\"MemberId\":{\"1\",\"Name\":\"Elena\",\"Tel\":\"495-68-45\"}"
+                + ",{\"MemberId\":{\"2\",\"Name\":\"Evheny\",\"Tel\":\"495-68-45\"}"
+                + ",{\"MemberId\":{\"3\",\"Name\":\"Djulus\",\"Tel\":\"495-68-45\"}]"</string>
+
+
+    </resources>
+

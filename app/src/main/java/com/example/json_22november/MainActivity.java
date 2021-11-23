@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         TextView JsonResultTextView = (TextView) findViewById(R.id.tv3);
         TextView JsonMySiteTextView = (TextView) findViewById(R.id.tv4);
         TextView JsonUrlTextView = (TextView) findViewById(R.id.tv5);
-     //  TextView JsonArrayTextView = (TextView) findViewById(R.id.tv6);
+        TextView JsonArrayTextView = (TextView) findViewById(R.id.tv6);
 
         String json_source = getString(R.string.simple_json);
 
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(json_source);
             JSONObject results = jsonObject.getJSONObject("results");
+
             String mySiteName = results.getString("sitename");
             String myUrl = results.getString("url");
 
@@ -46,8 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 stringArrayElement +=
                         arrayElement.getString("element") + "\n";
             }
+
             // выводим данные, полученные из массива
-           // JsonArrayTextView.setText(stringArrayElement);
+            JsonArrayTextView.setText(stringArrayElement);
 
         } catch (JSONException e) {
             e.printStackTrace();
